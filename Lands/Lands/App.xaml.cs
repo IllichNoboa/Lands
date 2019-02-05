@@ -1,7 +1,5 @@
 ﻿
-using Xamarin.Forms.Xaml;
 
-[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Lands
 {
     using System;
@@ -15,7 +13,7 @@ namespace Lands
         {
             InitializeComponent();
 
-            this.MainPage = new LoginPage();
+            this.MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()
