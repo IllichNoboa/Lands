@@ -6,9 +6,9 @@ namespace Lands.ViewModels
     using System.ComponentModel;
     using System.Runtime.CompilerServices;
 
-    public class BaseViewModel : InotifyPropertyChanged
+    public class BaseViewModel : INotifyPropertyChanged
     {
-        public Event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler PropertyChanged;
        
         protected void OnPropertyChanged([CallerMemberName] String propertyName = null)
         {
