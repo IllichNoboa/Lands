@@ -157,4 +157,10 @@
       <Name>Lands</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\facebook_logo.png" />
+    <BundleResource Include="Resources\instagram_logo.png" />
+    <BundleResource Include="Resources\onu_logo.png" />
+    <BundleResource Include="Resources\Twiter_logo.png" />
+  </ItemGroup>
 </Project>

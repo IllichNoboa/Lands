@@ -1,17 +1,21 @@
-﻿using System;
-using Xamarin.Forms;
+﻿
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Lands
 {
+    using System;
+    using Xamarin.Forms;
+    using Xamarin.Forms.Xaml;
+    using View;
+
     public partial class App : Application
     {
         public App()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            this.MainPage = new LoginPage();
         }
 
         protected override void OnStart()
